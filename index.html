@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>主页</title>
+	<meta http-equiv="Cache-control" content="no-cache">
+	<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="address=no" name="format-detection">
+	<style>
+	    body{
+	    	background:#eee;
+	    	margin:0px;
+	    	color:#fff;
+	    	font:16px/1.5 Arial;
+	    }
+	    h3,ul,li{margin:0px;
+	    	border:0px;}
+		#nav{
+			background:#06c1ae;
+			display:-webkit-flex;
+			display:flex;
+			
+		}
+	    #nav .city{
+	    	/*background:#ff0;*/
+	    	flex:1;
+	    	padding-top:10px;
+	    	padding-left:5px;
+	    	padding-right:0px;
+	    	
+	    }
+	    #nav .find{
+	    	flex:5;
+	    	padding-top:5px;
+	    	padding-left:20px;
+	    	
+	    	
+	    }
+	    .find1{
+	    	border:1px solid #f00;
+	    	height:30px;
+	    	display:flex;
+	    	width:98%;
+	    	background:#eee;
+	    	border-radius:5px;
+	    	
+	    }
+	    .find1 .findInput{
+	    	background:transparent;
+	    	border:none;
+	    	border:none;
+	    	color:#fff;
+
+
+	    }
+	    #nav .my{
+	    	flex-direction: column;
+	    	background:#099;
+	    	flex:1;
+	    	padding-left:5px;
+	    	padding-right:5px;
+	    	flex-wrap:wrap;
+	    	display:flex;
+	    	align-items:center;
+	    }
+	   #nav .my .my1{
+	   	font-size:20px;
+	   	padding-bottom:0px;
+	   	line-height: 24px;
+	   }
+	   #nav .my .my2{
+	   	font-size:12px;
+	   }
+	  @font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1479471305336'); /* IE9*/
+  src: url('iconfont.eot?t=1479471305336#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1479471305336') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1479471305336') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1479471305336#iconfont') format('svg'); /* iOS 4.1- */
+}
+.city,.my1,.find1{font-family: "iconfont";}
+.city:after{content: "\e61d";}
+.my1:after{content: "\e609";}
+.find1:before{content: "\e65c";
+padding-top:5px;
+ padding-left:5px;
+ padding-right:5px;
+}
+
+#menu{
+	background:#fff;
+	color:#666;
+	font-size:10px;
+	font-family: "微软雅黑";
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	
+}
+#menu .one,.two,.three,.four{
+	background:#fff;
+	display:flex;
+
+
+}
+.one1,.one2,.one3,.one4,.one5,.two1,.two2,.two3,.two4,.two5,.three1,.three2,.three3,.three4,.three5{
+	flex:1;
+	text-align:center;
+	font-family: "iconfont";
+
+}
+.one1,.one2,.one3,.one4,.one5,.three1,.three2,.three3,.three4,.three5{
+	font-size:28px;
+	color:#f00;
+}
+.one1:after{
+	content: "\e619";
+}
+.one2:after{
+ content: "\e637";
+}
+.one3:after{
+content: "\e60c";
+}
+.one4:after{
+	content: "\e683";
+}
+.one5:after{
+	 content: "\e673";
+}
+.three1:after{
+	content: "\e60c";
+}
+.three2:after{
+content: "\e607";
+}
+.three3:after{
+content: "\e644"; 
+}
+.three4:after{
+	content: "\e606";
+}
+.three5:after{
+	content: "\e62f";
+}
+#part-3{
+ display:flex;
+ margin-bottom:10px;
+ border-bottom: 1px solid #ccc;
+}
+section.sec1{
+	flex:1;
+	background:#fff;
+	color:#ccc;
+	font:12px/1.5em "微软雅黑";
+	display:flex;
+	flex-wrap:wrap;
+	text-align:center;
+	padding:20px;
+}
+.sec11{width:100%;color:#0f0;font-weight:bold;font-size:14px;}
+.sec12{width:100%;}
+.sec13{width:auto;height:auto;}
+section.sec2{
+	flex:5;
+	display:flex;
+	background:#fff;
+    flex-wrap:wrap;
+    border-left:1px solid #ccc;
+    
+
+}
+section.sec21{
+	background:#fff;
+	width:100%;
+	color:#ccc;
+	display: flex;
+}
+ .sec21 span{
+ 	font:12px/1.5em Arial;
+ }
+.sec21 .sec211{
+	display:flex;
+	background:#fff;
+	flex-direction:column;
+	flex-wrap: wrap;
+	padding-left:50px;
+	padding-top:20px;
+	padding-right:10px;
+}
+.sec212{
+	padding-top:20px;
+}
+.sec2111{
+	flex:1;
+	/*border:1px solid #ff0;*/
+	color:#f00;
+
+
+}
+.sec2112{
+	flex:1;
+	/*border:1px solid #0f0;*/
+}
+section.sec22{
+	background:#fff;
+	width:100%;
+	display: flex;
+    flex-direction:row;
+    text-align: center;
+    border-top:1px solid #ccc;
+}
+.sec221{
+	flex:1;
+	border-right:1px solid #fff;
+	display:flex;
+	flex-direction:column;
+    text-align: center;
+
+}
+.sec2211,.sec2212,.sec2213{
+	font-size:12px;
+	color:#ccc;
+	flex:1;
+}
+.sec2211{
+	color:pink;
+	font-size:16px;
+	font-weight: bold;
+
+}
+.sec222{
+	flex:1;
+	border-left:1px solid #ccc;
+	background:#fff;
+	display: flex;
+	flex-direction:column;
+    text-align: center;
+	
+}
+
+.sec2221,.sec2222,.sec2223{
+	font-size:12px;
+	color:#ccc;
+	flex:1;
+}
+.sec2221{
+	color:yellow;
+	font-size:16px;
+	font-weight: bold;
+
+}
+#part-4{
+	border-top:1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background:#fff;
+	
+}
+h3{
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color:#333;
+	font-weight:normal;
+	margin:10px 0px 10px 8px;
+	border-bottom: 1px solid #ccc;
+	
+}
+.sec41{
+	display: flex;
+	color:#000;
+	
+	border-bottom:1px solid #ccc;
+}
+.sec411{
+
+	flex:1;
+	padding-left:8px;
+	
+	
+}
+.sec411 img{
+ max-width:100%;
+ height:auto;
+}
+.sec412{
+	flex:5;
+	display:flex;
+	flex-direction:column;
+	font:12px/1.5 Arial;
+	padding-left:10px;
+}
+.sec4121{
+	flex:1;
+	font-size:14px;
+}
+.sec4122{
+	flex:1;
+	color:#666;
+}
+.sec4123{
+	flex:2;
+	 color:#666;
+
+}
+.sec4123 .span1{
+  color:#099;
+  font-size:16px;
+  padding-right:5px;
+
+}
+.sec4123 .span3{
+	position:absolute;
+	background:#ff0;
+	right:20px;
+}
+	</style>
+
+
+</head>
+<body>
+	<div id="nav">
+		<span class="city">城市</span>
+		<span class="find">
+		<span class="find1">
+			<input type="text" class="findInput" value="输入商家/品类/商圈" >
+		</span>
+		</span>
+		<span class="my">
+		<span class="my1"></span>
+		<span class="my2">我的</span>
+		</span>
+	</div>
+<div id="menu">
+	<div class="one">
+	<span class="one1"></span>
+	<span class="one2"></span>
+	<span class="one3"></span>
+	<span class="one4"></span>
+	<span class="one5"></span>
+	</div>
+	<div class="two">
+	<span class="two1">美食</span>
+	<span class="two2">电影</span>
+	<span class="two3">酒店</span>
+	<span class="two4">娱乐</span>
+	<span class="two5">外卖</span>
+	</div>
+	<div class="three">
+	<span class="three1"></span>
+	<span class="three2"></span>
+	<span class="three3"></span>
+	<span class="three4"></span>
+	<span class="three5"></span>
+	</div>
+	<div class="two">
+	<span class="two1">KTV</span>
+	<span class="two2">周边游</span>
+	<span class="two3">丽人</span>
+	<span class="two4">小吃快餐</span>
+	<span class="two5">机票/火车票</span>
+	</div>
+</div>
+<div id="part-3">
+	<section class="sec1">
+	 <span class="sec11">我们约吧</span>
+	 <span class="sec12">恋人家人好朋友</span>
+	 <img src="images/ly.png" alt="" class="sec13" style="width:88px;height:88px">
+	</section>
+	<section class="sec2">
+	  <section class="sec21">
+	      <div class="sec211">
+	  	 <span class="sec2111" style="font-size:14px">低价超值</span>
+	  	 <span class="sec2112">十元慧生活</span>
+	  	 </div>
+	  	 <img src="images/hbb.jpg" alt="" style="width:80px;height:65px" class="sec212">
+	  </section>
+	  <section class="sec22">
+	  	<div class="sec221">
+	  		<span class="sec2211">聚餐宴请</span>
+	  		<span class="sec2212">朋友家人常聚聚</span>
+	  		<span class="sec2213"><img src="images/pangxie.png" alt="" style="width:40px;height:40px" ></span>
+	  	</div>
+	  	<div class="sec222">
+	  		<span class="sec2221">名店抢购</span>
+	  		<span class="sec2222">即将开始</span>
+	  		<span class="sec2223">time</span>
+	  	</div>
+	  </section>
+	</section>
+</div>
+<div id="part-4">
+  <h3>猜你喜欢</h3>
+   <section class="sec41">
+  	<div class="sec411">
+  		<img src="images/1.jpg" alt="">
+  	</div>
+  	<div class="sec412">
+  		<span class="sec4121">掉香缘掉渣饼</span>
+  		<span class="sec4122">[西单]掉香缘掉渣饼一份</span>
+  		<span class="sec4123">
+  		    <span class="span1">6.9元</span>
+  		    <span>门市价8元</span>
+  		    <span class="span3">已售203980</span>
+  		 </span>
+  	</div>
+  </section>
+  <section class="sec41">
+  	<div class="sec411">
+  		<img src="images/1.jpg" alt="">
+  	</div>
+  	<div class="sec412">
+  		<span class="sec4121">掉香缘掉渣饼</span>
+  		<span class="sec4122">[西单]掉香缘掉渣饼一份</span>
+  		<span class="sec4123">
+  		    <span class="span1">6.9元</span>
+  		    <span>门市价8元</span>
+  		    <span class="span3">已售203980</span>
+  		 </span>
+  	</div>
+  </section>
+  <section class="sec41">
+  	<div class="sec411">
+  		<img src="images/1.jpg" alt="">
+  	</div>
+  	<div class="sec412">
+  		<span class="sec4121">掉香缘掉渣饼</span>
+  		<span class="sec4122">[西单]掉香缘掉渣饼一份</span>
+  		<span class="sec4123">
+  		    <span class="span1">6.9元</span>
+  		    <span>门市价8元</span>
+  		    <span class="span3">已售203980</span>
+  		 </span>
+  	</div>
+  </section>
+  <section class="sec41">
+  	<div class="sec411">
+  		<img src="images/1.jpg" alt="">
+  	</div>
+  	<div class="sec412">
+  		<span class="sec4121">掉香缘掉渣饼</span>
+  		<span class="sec4122">[西单]掉香缘掉渣饼一份</span>
+  		<span class="sec4123">
+  		    <span class="span1">6.9元</span>
+  		    <span>门市价8元</span>
+  		    <span class="span3">已售203980</span>
+  		 </span>
+  	</div>
+  </section>
+  <section class="sec41">
+  	<div class="sec411">
+  		<img src="images/1.jpg" alt="">
+  	</div>
+  	<div class="sec412">
+  		<span class="sec4121">掉香缘掉渣饼</span>
+  		<span class="sec4122">[西单]掉香缘掉渣饼一份</span>
+  		<span class="sec4123">
+  		    <span class="span1">6.9元</span>
+  		    <span>门市价8元</span>
+  		    <span class="span3">已售203980</span>
+  		 </span>
+  	</div>
+  </section>
+</div>
+</body>
+</html>
